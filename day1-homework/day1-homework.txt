@@ -1,0 +1,5 @@
+1. fastqc ~/data/rawdata/SRR072893.fastq 
+2. hisat2 -p 4 -x ~/data/genomes/BDGP6 -U ~/data/rawdata/SRR072893.fastq -S Chromosome_Test.sam
+3. samtools sort -o Chromosome_Test.sorted.bam ~/data/rawdata/Chromosome_Test.sam
+samtools index -b ~/data/rawdata/Chromosome_Test.sorted.bam 
+4. stringtie ~/data/rawdata/Chromosome_Test.sorted.bam -p 4 -e -G ~/data/genomes/BDGP6.Ensembl.81.gtf -o Chromosome_Test.gtf -B 
