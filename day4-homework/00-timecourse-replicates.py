@@ -27,7 +27,6 @@ for sample in df_samples["sample"][fsoi]:
     froi = df["t_name"] == transcript
     f_fpkms.append(df[froi]["FPKM"].values)
     
-# print f_fpkms
     
 
 
@@ -43,7 +42,6 @@ for sample in df_samples["sample"][msoi]:
     mroi = df["t_name"] == transcript
     m_fpkms.append(df[mroi]["FPKM"].values)
     
-# print m_fpkms
 
 
 
@@ -81,7 +79,7 @@ for sample in df_replicates["sample"][fsoi_replicates]:
 x_tick_labels = ["10", "11", "12", "13", "14A", "14B", "14C", "14D"]
 
 plt.figure()
-plt.plot(replicates_male, 'c-', label="male replicates", linewidth=5)
+plt.plot(replicates_male, 'o', color='b', label="male replicates", markersize=10)
 plt.xticks(range(len(x_tick_labels)), ["10", "11", "12", "13", "14A", "14B", "14C", "14D"], rotation=90)
 plt.tick_params(
     axis='x',          
@@ -95,11 +93,11 @@ plt.tick_params(
     right='off')
 plt.ylabel('mRNA Abundance (FPKM)', fontsize=15)
 plt.xlabel('developmental stage', fontsize=15)
-plt.title('FBtr0331261 Abundance', fontsize=20, y=1.02)
+plt.title('Transcriptional Abundance\n of FBtr0331261', fontsize=15, y=1.02)
 plt.subplots_adjust(bottom=0.15, right=0.65)
 
 
-plt.plot(replicates_female, 'g-', label='female replicates', linewidth=5)
+plt.plot(replicates_female, 'ro', label='female replicates', markersize=10)
 
 
 
@@ -107,7 +105,7 @@ plt.plot(f_fpkms, 'r-', label='female', linewidth=5)
 
 
 plt.plot(m_fpkms, 'b-', label='male', linewidth=5)
-plt.legend(frameon=False, bbox_to_anchor=(1.65, 1.00))
+plt.legend(frameon=False, bbox_to_anchor=(1.65, 1.00), numpoints=1)
 
 
 plt.savefig("timecourse_replicates.png")
