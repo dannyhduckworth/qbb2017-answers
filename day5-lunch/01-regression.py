@@ -25,6 +25,11 @@ h3k27 = pd.read_csv(sys.argv[4], sep="\t", index_col=0, header=None)
 #Import c_tab file for FPKMs
 c_tab = pd.read_csv(sys.argv[5], sep="\t", index_col="t_name")
 
+#Sort index
+h3k36=h3k36.sort_index()
+h3k9=h3k9.sort_index()
+h3k4=h3k4.sort_index()
+h3k27=h3k27.sort_index()
 
 
 #Concat the histone means and the FPKMs. 
