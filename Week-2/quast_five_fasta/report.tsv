@@ -1,0 +1,22 @@
+Assembly	Velvet_contigs	Spades_contigs	spades_nano_long_contigs	reads12_velvet_contigs	reads12_spades_contigs
+# contigs (>= 0 bp)	305	123	64	18	2
+# contigs (>= 1000 bp)	0	3	18	7	1
+# contigs (>= 5000 bp)	0	0	3	7	1
+# contigs (>= 10000 bp)	0	0	0	4	1
+# contigs (>= 25000 bp)	0	0	0	1	1
+# contigs (>= 50000 bp)	0	0	0	0	1
+Total length (>= 0 bp)	56973	46716	70165	100355	100026
+Total length (>= 1000 bp)	0	3514	54576	99397	99915
+Total length (>= 5000 bp)	0	0	17908	99397	99915
+Total length (>= 10000 bp)	0	0	0	81037	99915
+Total length (>= 25000 bp)	0	0	0	33235	99915
+Total length (>= 50000 bp)	0	0	0	0	99915
+# contigs	11	19	23	7	1
+Largest contig	998	1409	6731	33235	99915
+Total length	7243	14250	58343	99397	99915
+GC (%)	50.71	51.43	52.38	52.57	52.58
+N50	632	718	4036	19832	99915
+N75	542	587	1961	13422	99915
+L50	5	8	6	2	1
+L75	8	13	11	4	1
+# N's per 100 kbp	0.00	0.00	0.00	0.00	0.00

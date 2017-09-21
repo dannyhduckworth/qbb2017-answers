@@ -1,0 +1,5 @@
+Min 207 
+ Max 1409 
+ Num Contigs 123 
+ Avg Length 379.804878049 
+ N50 372

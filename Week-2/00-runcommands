@@ -1,0 +1,42 @@
+
+1) Run Velvet
+
+time velveth ~/qbb2017-answers/Week-2/Velvet/ 31 -fastq reads_low_1.fastq reads_low_2.fastq
+
+time velvetg ~/qbb2017-answers/Week-2/Velvet/
+
+
+
+2) Run Spades
+spades.py --12 reads_low_1.fastq --12 reads_low_2.fastq -o ~/qbb2017-answers/Week-2/Spades/
+
+spades.py --nanopore MAP006.subset.fa --12 reads_low_1.fastq --12 reads_low_2.fastq -o ~/qbb2017-answers/Week-2/spades_nano_long
+
+
+
+3) Running the Statistics Script
+
+./01-genomesorting.py <contigs.fasta>
+
+
+
+4) Lastz Formatting
+
+lastz ~/qbb2017-answers/Week-2/reference.fasta ~/qbb2017-answers/Week-2/Velvet/contigs.fa --chain --step=20 --nogapped --format=general:start1,size2,end1,name2 --output=velvet1_lastz.tsv
+
+
+
+5) Lastz Sorting by Number
+
+sort -k 1 -n velvet1_lastz.tsv > velvet1_lastz_sorted.tsv
+
+
+
+6) Running the Plot Script
+
+02-genome_plot.py <sorted lastz.tsv>
+
+
+7) Running quast
+
+/usr/local/bin/quast -o OUTPUTFILE -t 16 <five fasta files>

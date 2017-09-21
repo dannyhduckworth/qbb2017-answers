@@ -1,0 +1,5 @@
+Min 111 
+ Max 99915 
+ Num Contigs 2 
+ Avg Length 50013.0 
+ N50 99915
