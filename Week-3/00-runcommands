@@ -1,0 +1,39 @@
+1) Download and unzip FASTQ
+
+tar xfv <file>
+
+
+2) Map with bwa men 
+
+bwa index <.fa>
+
+bwa mem -R '@RG\tID:A01_63\tSM:A01_63' -o A01_63.SAM ~/qbb2017-answers/Week-3/saccer3/cat_chrom.fa ~/qbb2017-answers/Week-3/A01_63.fastq 
+
+bwa mem -R '@RG\tID:foo\tSM:bar' -o <outfile.sam> <ref.fa> <query.fa>
+
+
+3) Index and sort the sam/bam files 
+
+
+samtools sort -o A01_63.sorted.bam ~/qbb2017-answers/Week-3/A01_63.sam
+
+samtools index -b ~/qbb2017-answers/Week-3/A01_63.sorted.bam 
+
+
+
+4) Apply freebayes analysis
+
+
+freebayes -f ~/qbb2017-answers/Week-3/saccer3/cat_chrom.fa ~/qbb2017-answers/Week-3/sorted/A01_09.sorted.bam ~/qbb2017-answers/Week-3/sorted/A01_11.sorted.bam ~/qbb2017-answers/Week-3/sorted/A01_23.sorted.bam ~/qbb2017-answers/Week-3/sorted/A01_24.sorted.bam ~/qbb2017-answers/Week-3/sorted/A01_27.sorted.bam ~/qbb2017-answers/Week-3/sorted/A01_31.sorted.bam ~/qbb2017-answers/Week-3/sorted/A01_35.sorted.bam ~/qbb2017-answers/Week-3/sorted/A01_39.sorted.bam ~/qbb2017-answers/Week-3/sorted/A01_62.sorted.bam ~/qbb2017-answers/Week-3/sorted/A01_63.sorted.bam -v freebayes_unfiltered.vcf
+
+
+
+5) Filter freebayes 
+
+
+vcffilter -f “QUAL > 100” freebayes_unfiltered.vcf > freebayes_filtered.vcf
+
+
+6) snpEff analysis 
+
+snpEff R64-1-1.86 freebayes_filtered.vcf > snpEff_out
