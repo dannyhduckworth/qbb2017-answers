@@ -37,3 +37,12 @@ vcffilter -f “QUAL > 100” freebayes_unfiltered.vcf > freebayes_filtered.vcf
 6) snpEff analysis 
 
 snpEff R64-1-1.86 freebayes_filtered.vcf > snpEff_out
+
+
+7) Sort the annotated vcf file for QUAL scores
+
+tail -n+83 freebayes_filtered.vcf > freebayes_filtered_deleteheader.vcf
+
+sort -k 6 -r -n freebayes_filtered_deleteheader.vcf > freebayes_filtered_sorted.vcf
+
+less -S freebayes_filtered_sorted.vcf | head -5 > freebayes_filtered_sorted5.vcf

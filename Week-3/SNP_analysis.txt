@@ -1,0 +1,3 @@
+Based on the annotations that snpEff provided, the top two results are upstream gene variants that affect transcripts. I am not exactly sure what this means, but I interpret it the following way: The SNP is located 5' upstream to the gene, and I am assuming this means it affects a non-coding region. It seems logical that the most common (if QUAL score relates to frequency?) SNP would be located in a region that is the least detrimental to the encoded gene product. This contrasts with upstream gene variants that affect protein coding, which I believe could have much more of an impact on the viability of the organism. 
+
+The remaining SNPs have annotations that say "ERROR_CHROMOSOME_NOT_FOUND", so I am not sure how to interpret those. 
