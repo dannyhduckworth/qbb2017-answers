@@ -1,0 +1,37 @@
+1) Download and unzip 
+
+gunzip <file>
+
+
+2) PCA using plink2
+
+plink2 --pca 2 tabs header --vcf BYxRM_segs_saccer3.bam.simplified.vcf --allow-extra-chr --mind
+
+
+3) Plot the PCA analysis
+
+./01-PCA.py <vcf file> <plot name>
+
+
+4) Plot the allele frequency
+
+./02-allele_plot.py <vcf file> <plot name>
+
+
+
+5) Insert tabs instead of the underscores with the phenotype file. 
+
+awk 'NR>1''{gsub ("_","\t")}{print}' BYxRM_PhenoData.txt > phenotypes.txt
+
+
+
+6) Plink2 the phenotype data. 
+
+plink2 --vcf BYxRM_segs_saccer3.bam.simplified.vcf --pheno pheno.txt --pca 2 header tabs --allow-no-sex --allow-extra-chr --linear --mind --all-pheno
+
+
+7) Make Manhattan plots of the plink files. 
+
+
+
+
