@@ -1,0 +1,66 @@
+1) Download the g1e.tar file on the course webpage. Unzip the file.
+
+tar xvd g1e.tar
+
+
+
+2) Download chromosome 19 from the mouse. Unzip it. 
+
+gunzip chr19.fa.gz
+
+
+
+3) Index the reference genome.
+
+bowtie2-build -f chr19.fa indexed_19
+
+
+
+4) Make alignments x4
+
+bowtie2 -q -x indexed_19 -U input_G1E.fastq -S input_G1E
+
+
+
+5) Run macs2 to generate narrow peaks files x4. Two for with controls. Two for without controls. 
+
+macs2 callpeak -t CTCF_G1E.sam -c input_G1E.sam -g 61000000 --outdir G1E_Control
+
+macs2 callpeak -t CTCF_G1E.sam -g 61000000 --outdir G1E_No_Control
+
+
+
+6) Bedtools intersect to find the overlapping regions x4. Find all combinations of control and non controls. 
+
+bedtools intersect -v -a ~/qbb2017-answers/Week-6/ER4_Control/NA_peaks.narrowPeak -b ~/qbb2017-answers/Week-6/G1E_Control/NA_peaks.narrowPeak > diff_bands1.txt
+
+bedtools intersect -v -header -a ~/qbb2017-answers/Week-6/G1E_Control/NA_peaks.narrowPeak -b ~/qbb2017-answers/Week-6/ER4_Control/NA_peaks.narrowPeak > diff_bands2.txt
+
+
+bedtools intersect -v -header -a ~/qbb2017-answers/Week-6/G1E_No_Control/NA_peaks.narrowPeak -b ~/qbb2017-answers/Week-6/ER4_No_Control/NA_peaks.narrowPeak > diff_bands2_nc.txt
+
+bedtools intersect -v -header -a ~/qbb2017-answers/Week-6/ER4_No_Control/NA_peaks.narrowPeak -b ~/qbb2017-answers/Week-6/G1E_No_Control/NA_peaks.narrowPeak > diff_bands1_nc.txt
+
+
+7) Take the first 100 hits from each of the previous intersect files. 
+
+Head -100 file > file_100
+
+
+8) Sort the narrow peaks files and take the top 100 hits. 
+
+sort -k 9 -r -n ~/qbb2017-answers/Week-6/ER4_Control/NA_peaks.narrowPeak | head -100 > ER4_control_sorted
+sort -k 9 -r -n ~/qbb2017-answers/Week-6/ER4_No_Control/NA_peaks.narrowPeak | head -100 > ER4_nocontrol_sorted
+
+
+9) Find the FASTA sequences from the previous sorted file. 
+
+bedtools getfasta -fi ~/qbb2017-answers/Week-6/chr19.fa -bed ER4_control_sorted > ER4_control_meme.fa
+bedtools getfasta -fi ~/qbb2017-answers/Week-6/chr19.fa -bed ER4_nocontrol_sorted > ER4_nocontrol_meme.fa
+
+
+10) Run Meme-chip
+
+/usr/local/opt/meme/bin/meme-chip -meme-maxw 20 -db motif_databases/JASPAR/JASPAR_CORE_2016_vertebrates.meme ER4_control_meme.fa
+
+/usr/local/opt/meme/bin/meme-chip -meme-maxw 20 -db motif_databases/JASPAR/JASPAR_CORE_2016_vertebrates.meme ER4_nocontrol_meme.fa
