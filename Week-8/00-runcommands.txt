@@ -1,0 +1,18 @@
+1) Download HiFive
+sudo pip install hifive
+
+
+2) Run HiFive
+hifive 5c-complete express -C Nora_ESC_male_E14.counts -P week8 Nora_Primers.bed
+
+
+3) Make heat maps
+
+hifive 5c-heatmap week8.fcp Out_fragment.heat -i Out_fragment.png -d fragment
+
+hifive 5c-heatmap -b 0 week8.fcp Out_enrich.heat -i Out_enrich.png -d enrichment -a compact 
+
+
+4) Write and run python script to find overlapped CTCF regions. 
+
+./01-CTCF_sorting.py ctcf_peaks.tsv Nora_Primers.bed > top_CTCF.txt
