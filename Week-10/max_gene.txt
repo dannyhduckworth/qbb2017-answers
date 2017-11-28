@@ -1,0 +1,13 @@
+Series([], Name: gene, dtype: object)
+gene                 Mir3062
+CFU                   5.2899
+poly                0.137504
+unk                 0.137504
+int                  6.54262
+mys                  5.61221
+mid                 0.137504
+avg_early             5.2899
+avg_late            0.137504
+ratio_early_late      38.471
+p-values                 NaN
+Name: 4, dtype: object
