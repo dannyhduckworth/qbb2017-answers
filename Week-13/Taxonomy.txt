@@ -1,0 +1,164 @@
+grep ">" bin.1.fa
+grep NODE_15_length_235270_cov_153.562668 assembly.kraken 
+
+________________________________________________________________
+
+bin.1.fa
+>NODE_14_length_235766_cov_39.967778
+>NODE_25_length_133218_cov_37.848772
+>NODE_40_length_102363_cov_33.084783
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus haemolyticus;Staphylococcus haemolyticus JCSC1435
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus haemolyticus;Staphylococcus haemolyticus JCSC1435
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus haemolyticus;Staphylococcus haemolyticus JCSC1435
+
+
+ Bin 1: root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus haemolyticus;Staphylococcus haemolyticus JCSC1435
+
+
+________________________________________________________________
+
+bin.2.fa
+>NODE_30_length_116726_cov_3.835555
+>NODE_66_length_80937_cov_3.162644
+>NODE_184_length_42741_cov_3.497774
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Lactobacillales;Leuconostocaceae;Leuconostoc;Leuconostoc citreum;Leuconostoc citreum KM20
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Lactobacillales;Leuconostocaceae;Leuconostoc;Leuconostoc citreum;Leuconostoc citreum KM20
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Lactobacillales;Leuconostocaceae;Leuconostoc;Leuconostoc citreum;Leuconostoc citreum KM20
+
+
+Bin 2: root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Lactobacillales;Leuconostocaceae;Leuconostoc;Leuconostoc citreum;Leuconostoc citreum KM20
+
+
+
+________________________________________________________________
+
+bin.3.fa
+>NODE_24_length_157060_cov_6.639394
+>NODE_51_length_90307_cov_7.345411
+>NODE_57_length_86315_cov_6.829585
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus lugdunensis;Staphylococcus lugdunensis HKU09-01
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus lugdunensis;Staphylococcus lugdunensis HKU09-01
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus lugdunensis;Staphylococcus lugdunensis HKU09-01
+
+
+ Bin 3: root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus lugdunensis;Staphylococcus lugdunensis HKU09-01
+
+
+________________________________________________________________
+
+
+bin.4.fa
+>NODE_1_length_1447137_cov_2268.097092
+>NODE_2_length_556123_cov_2361.439230
+>NODE_8_length_298793_cov_2547.011572
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Lactobacillales;Enterococcaceae;Enterococcus;Enterococcus faecalis;Enterococcus faecalis OG1RF
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Lactobacillales;Enterococcaceae;Enterococcus;Enterococcus faecalis;Enterococcus faecalis V583
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Lactobacillales;Enterococcaceae;Enterococcus;Enterococcus faecalis;Enterococcus faecalis str. Symbioflor 1
+
+
+
+Bin 4: root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Lactobacillales;Enterococcaceae;Enterococcus;Enterococcus faecalis
+
+
+________________________________________________________________
+
+
+bin.5.fa
+>NODE_4_length_455101_cov_112.371015
+>NODE_6_length_320041_cov_123.475336
+>NODE_7_length_310076_cov_130.336474
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Actinobacteria;Actinobacteria;Propionibacteriales;Propionibacteriaceae;Cutibacterium;Cutibacterium avidum;Cutibacterium avidum 44067
+
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Actinobacteria;Actinobacteria;Propionibacteriales;Propionibacteriaceae;Cutibacterium;Cutibacterium avidum;Cutibacterium avidum 44067
+
+root;cellular organisms;Bacteria;Terrabacteria group;Actinobacteria;Actinobacteria;Propionibacteriales;Propionibacteriaceae;Cutibacterium;Cutibacterium avidum;Cutibacterium avidum 44067
+
+
+Bin 5: root;cellular organisms;Bacteria;Terrabacteria group;Actinobacteria;Actinobacteria;Propionibacteriales;Propionibacteriaceae;Cutibacterium;Cutibacterium avidum;Cutibacterium avidum 44067
+
+
+________________________________________________________________
+
+
+bins.6.fa
+>NODE_20_length_181746_cov_381.691663
+>NODE_29_length_119200_cov_370.287381
+>NODE_41_length_101957_cov_389.183480
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus epidermidis;Staphylococcus epidermidis RP62
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus epidermidis;Staphylococcus epidermidis ATCC 12228
+
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus epidermidis;Staphylococcus epidermidis ATCC 12228
+
+
+Bin 6: root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus epidermidis
+
+
+________________________________________________________________
+
+bins.7.fa
+>NODE_12_length_269228_cov_106.168966
+>NODE_21_length_175135_cov_99.919448
+>NODE_22_length_170455_cov_103.210716
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus aureus;Staphylococcus aureus subsp. aureus;Staphylococcus aureus subsp. aureus ST72;Staphylococcus aureus subsp. aureus CN1
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus aureus;Staphylococcus aureus subsp. aureus;Staphylococcus aureus subsp. aureus ST72;Staphylococcus aureus subsp. aureus CN1
+
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus aureus;Staphylococcus aureus subsp. aureus;Staphylococcus aureus subsp. aureus ST72;Staphylococcus aureus subsp. aureus CN1
+
+
+
+Bin 7: root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus;Staphylococcus aureus;Staphylococcus aureus subsp. aureus;Staphylococcus aureus subsp. aureus ST72;Staphylococcus aureus subsp. aureus CN1
+
+
+
+________________________________________________________________
+
+
+
+bins.8.fa
+>NODE_3_length_498518_cov_181.760000
+>NODE_5_length_427301_cov_143.861656
+>NODE_15_length_235270_cov_153.562668
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Tissierellia;Tissierellales;Peptoniphilaceae;Anaerococcus;Anaerococcus prevotii;Anaerococcus prevotii DSM 20548
+
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Tissierellia;Tissierellales;Peptoniphilaceae;Anaerococcus;Anaerococcus prevotii;Anaerococcus prevotii DSM 20548
+
+
+root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Tissierellia;Tissierellales;Peptoniphilaceae;Finegoldia;Finegoldia magna;Finegoldia magna ATCC 29328
+
+
+
+Bin 8: root;cellular organisms;Bacteria;Terrabacteria group;Firmicutes;Tissierellia;Tissierellales;Peptoniphilaceae
