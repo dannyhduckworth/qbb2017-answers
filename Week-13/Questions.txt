@@ -1,0 +1,13 @@
+1. Enterococcus faecalis continued to be the most prominent bacteria present, which makes sense considering it is the poop bacteria. As nutrients/food are introduced into the gut system throughout the days, some bacteria (such as Cutibacterium avidum) go down to 3% but then grow back to ~30% by Day 8. 
+
+2. I think the simplest metric for the contigs is the sequence itself, but this doesn't necessarily cluster the groupings. In class, we learned that we can look at the relative abundance of reads and GC content. 
+
+
+3. I don't know if we have all the data for this question? There are 8 bins. 
+
+
+
+4. One could devise a python script that iterates over all the "nodes" in each bin and looks for the longest contigous same organism description/name. (Instead of the method I used of grep-ing and visually inspecting the names.)
+
+
+5. They largely agree with each other. Cutibacterium avidum shows the change where it decreases and then comes back over time. E. faecalis stays consistently high throughout. There were not major differences I could visually distinguish. 
